@@ -601,7 +601,17 @@ header .logo {
 }
 
 header .logo a {
-    background: #000033 none repeat scroll 0 0;
+    background: #1c213f none repeat scroll 0 0;
+    color: #fff;
+    float: left;
+    font-size: 19px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 14px 40px;
+}
+
+header .logo-light a {
+    background: #e2777f none repeat scroll 0 0;
     color: #fff;
     float: left;
     font-size: 19px;
@@ -731,23 +741,23 @@ header nav>ul>li.current-menu-item::before {
 }
 
 .share-btn:hover {
-    color: #000033;
+    color: #e2777f;
     transition: color 0.6s;
 }
 
 .search-btn {
-    background: #000033 none repeat scroll 0 0;
+    background: #e2777f none repeat scroll 0 0;
     color: #fff;
 }
 
 .search-btn:hover {
-    background: #ffb600 none repeat scroll 0 0;
-    color: #000033;
+    background: #1c213f none repeat scroll 0 0;
+    color: #e2777f;
     transition: color 0.6s, background 0.6s;
 }
 
 div>div>.share-btn {
-    color: #000033;
+    color: #e2777f;
 }
 
 div>div>.share-btn:hover {
@@ -894,13 +904,13 @@ div>header>div>.floating-btns {
 }
 
 .portfolio-infos>a {
-    border: 2px solid #ffb600;
+    border: 2px solid #1c213f;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     border-radius: 50%;
-    color: #ffb600;
+    color: #1c213f;
     float: left;
     font-size: 13px;
     height: 32px;
@@ -931,7 +941,7 @@ div>header>div>.floating-btns {
 }
 
 .portfolio-tags a {
-    color: #ffb600;
+    color: #1c213f;
     float: left;
     font-size: 12px;
     font-weight: 400;
@@ -972,11 +982,11 @@ div>header>div>.floating-btns {
 /* Footer */
 
 footer.dark {
-    background: #000033 none repeat scroll 0 0;
+    background: #1c213f none repeat scroll 0 0;
 }
 
 footer.dark .bottom-line>span a {
-    color: #ffb600;
+    color: #1c213f;
 }
 
 footer {
@@ -1327,7 +1337,7 @@ header nav>ul>li.menu-item-has-children ul li a {
 }
 
 .portfolio-nav>li>a::before {
-    border-bottom: 3px solid #000033;
+    border-bottom: 3px solid #e2777f;
     bottom: 0;
     content: "";
     height: 6px;
@@ -2123,7 +2133,7 @@ header.text-dark .menu-btn {
 }
 
 .option-isotop.text-dark .portfolio-nav>li>a.selected {
-    color: #000033;
+    color: #e2777f;
 }
 
 .hover5 .portfolio-infos {
@@ -2177,7 +2187,7 @@ header.text-dark .menu-btn {
 }
 
 .hover5 .portfolio-hover::before {
-    background: #000033 none repeat scroll 0 0;
+    background: #e2777f none repeat scroll 0 0;
 }
 
 .hover5:hover>.portfolio-detail-box {
@@ -2281,7 +2291,7 @@ header.text-dark .menu-btn {
 /* Inner head */
 
 .inner-head {
-    border-bottom: 1px solid #e2e6e6;
+    border-bottom: 1px solid #ffff;
     float: left;
     margin-top: 80px;
     padding-bottom: 50px;
@@ -2289,7 +2299,7 @@ header.text-dark .menu-btn {
 }
 
 .inner-head h2 {
-    color: #ffb006;
+    color: #7a85a0;
     float: left;
     font-size: 186px;
     font-weight: 700;
@@ -2303,7 +2313,7 @@ header.text-dark .menu-btn {
 }
 
 .inner-head h2:nth-child(2) {
-    color: #000033;
+    color: #f7c4c5;
     float: left;
     left: 70px;
     font-size: 186px;
@@ -2703,7 +2713,7 @@ header.text-dark .menu-btn {
 }
 
 .single-portfolio-detail a {
-    color: #ffb600;
+    color: #1c213f;
 }
 
 .single-portfolio-detail a:hover {
@@ -2803,7 +2813,7 @@ header.text-dark .menu-btn {
 }
 
 .project-navigation>ul>li span {
-    color: #ffb600;
+    color: #1c213f;
     float: left;
     font-family: "Montserrat", Helvetica, sans-serif;
     font-size: 15px;
@@ -2830,7 +2840,7 @@ header.text-dark .menu-btn {
 }
 
 .project-navigation>ul>li>i {
-    color: #ffb600;
+    color: #1c213f;
     font-size: 13px;
     left: 0;
     position: absolute;
@@ -3355,11 +3365,11 @@ header * {
 }
 
 .yellow {
-    background-color: #ffb600;
+    background-color: #1c213f;
 }
 
 div>a>i {
-    -webkit-text-stroke: 1.5px #000033;
+    -webkit-text-stroke: 1.5px #e2777f;
 }
 
 h2>a {
