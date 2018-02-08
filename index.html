@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111371831-2"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -14,34 +13,49 @@
 
         gtag('config', 'UA-111371831-2');
     </script>
-
     <meta charset="UTF-8">
     <title>Britt Rademaker</title>
+    <meta name="description" content="Britt Rademaker, student Communication and Multimedia Design">
+    <meta name="keywords" content="britt, rademaker, portfolio, cmd, communication and multimedia design, ui, ux, visual desginer, interaction designer, ontwerper, multimedia">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Poppins:400,700'>
     <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Montserrat:300,400,600'>
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
-    <link rel="stylesheet" href="css/homepage.css">
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <header class="simple-center text-light">
-        <div class="floating-btns">
-            <a class="share-btn" href="about.html" title="">ABOUT</a>
-            <a class="search-btn" href="portfolio.html" title="">ALL PROJECTS</a>
-        </div>
-    </header>
-
     <main role="main">
         <!-- Slider -->
         <section class="velo-slides" data-velo-slider="on" data-velo-theme="light">
+            <div class="opacity-nav">
+                <div class="menu-index" id="buttons" style="z-index:999999">
+                    <i class="fa  fa-close"></i>
+                </div>
+                <ul class="menu-fullscreen">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Projects</a></li>
+                    <li><a href="about.html">Over mij</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
 
+
+            <!--Header-->
+            <header id="fullscreen">
+                <div class="logo" id="full"><a href="index.html">BR</a></div>
+                <div class="menu-index" id="button">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </header>
+            <div class="clear"></div>
             <!-- Slide -->
             <section class="velo-slide">
                 <!-- Pretitle Hint -->
-                <span class="velo-slider__hint"><span><span>Intro</span></span>
+                <span class="velo-slider__hint"><span><span>Scroll down</span></span>
                 </span>
                 <!-- Slide BG -->
                 <div class="velo-slide__bg velo-slide-header">
@@ -55,9 +69,9 @@
                 <header class="velo-slide__header">
                     <h3 class="velo-slide__title"><span class="oh"><span>Britt Rademaker</span></span><span class="oh"><span>Portfolio</span></span>
                     </h3>
-                    <p class="velo-slide__text"><span class="oh"><span>Student Communication and Multimedia met een grote liefde voor design.</span></span>
+                    <p class="velo-slide__text"><span class="oh"><span>Student Communication and Multimedia met een grote liefde voor design. Scroll naar beneden voor mijn recente projecten of bekijk alle projecten.</span></span>
                     </p>
-                    <span class="velo-slide__btn"><a class="btn-draw btn--white" href="#"><span class="btn-draw__text"><span>Scroll down</span></span>
+                    <span class="velo-slide__btn"><a class="btn-draw btn--white" href="portfolio.html"><span class="btn-draw__text"><span>Alle projecten</span></span>
                     </a>
                     </span>
                 </header>
@@ -181,7 +195,28 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.3.0/velocity.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.3.0/velocity.ui.js'></script>
+
+
+
     <script src="js/index.js"></script>
+
+    <!--Scripts-->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/modernizr.custom.42534.js" type="text/javascript"></script>
+    <script src="js/jquery.waitforimages.js" type="text/javascript"></script>
+    <script src="js/typed.js" type="text/javascript"></script>
+    <script src="js/masonry.pkgd.min.js" type="text/javascript"></script>
+    <script src="js/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+    <script src="js/jquery.jkit.1.2.16.min.js"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+    <script>
+        $('#button, #buttons').on('click', function() {
+            $(".opacity-nav").fadeToggle("slow", "linear");
+            // Animation complete.
+        });
+    </script>
 </body>
 
 </html>

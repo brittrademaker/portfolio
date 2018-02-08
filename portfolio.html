@@ -1,301 +1,261 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+
+<html lang="en">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111371831-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+    <meta charset="utf-8">
+    <title>Britt Rademaker | Portfolio</title>
+    <meta name="description" content="Britt Rademaker, student Communication and Multimedia Design">
+    <meta name="keywords" content="britt, rademaker, portfolio, cmd, communication and multimedia design, ui, ux, visual desginer, interaction designer, ontwerper, multimedia">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="thomsoon.com">
+    <link rel="icon" type="image/png" href="images/favicon.png" />
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+    <!--Style-->
 
-        gtag('config', 'UA-111371831-2');
-    </script>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Britt Rademaker</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-responsive.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-    <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/icons.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
 
 </head>
 
 <body>
-    <div class="theme-layout yellow">
-        <header>
-            <div class="container">
-                <div class="logo-light"><a href="index.html" title="">BR</a></div>
-                <div class="floating-btns">
-                    <a class="share-btn" href="about.html" title="">ABOUT</a>
-                    <a class="search-btn" href="index.html" title="">BACK 2 HOME</a>
-                </div>
-            </div>
-        </header>
+    <div class="opacity-nav">
+        <div class="menu-index" id="buttons" style="z-index:999999">
+            <i class="fa  fa-close"></i>
+        </div>
+        <ul class="menu-fullscreen">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Projects</a></li>
+            <li><a href="about.html">Over mij</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
 
-        <section>
-            <div class="block less-padding-top less-padding-bottom">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="portfolio-sec no-gape">
-                                <section id="options">
-                                    <div class="option-isotop text-dark">
-                                        <ul id="filter" class="option-set portfolio-nav" data-option-key="filter">
-                                            <li><a href="#all" data-option-value="*" class="selected"><span>ALL</span></a></li>
-                                            <li><a href="#brand" data-option-value=".ux"><span>UX</span></a></li>
-                                            <li><a href="#illustrate" data-option-value=".ui"><span>UI</span></a></li>
-                                            <li><a href="#design" data-option-value=".fe"><span>Front-end</span></a></li>
-                                        </ul>
-                                    </div>
-                                </section>
-                                <!-- FILTER BUTTONS -->
-                                <div class="row">
-                                    <div id="masonry" class="animated fadeInUp">
-                                        <div class="ux ui col-md-4 col-sm-6 col-xs-6">
-                                            <div class="portfolio-work hover5">
-                                                <img src="images/text-in-context.png" alt="" />
-                                                <div class="portfolio-detail-box">
-                                                    <div class="portfolio-hover">
-                                                        <div class="portfolio-infos">
-                                                            <a href="text-in-context.html" title=""><i class="fa fa-arrow-right"></i></a>
-                                                            <h2><a href="text-in-context.html" title="">Café Camille</a></h2>
-                                                            <div class="portfolio-tags">
-                                                                <a href="#" title="">Visual</a>
-                                                                <a href="#" title="">Text in Context</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="ui ux fe col-md-4 col-sm-6 col-xs-6">
-                                            <div class="portfolio-work hover5">
-                                                <img src="images/project-web.png" alt="" />
-                                                <div class="portfolio-detail-box">
-                                                    <div class="portfolio-hover">
-                                                        <div class="portfolio-infos">
-                                                            <a href="project-web.html" title=""><i class="fa fa-arrow-right"></i></a>
-                                                            <h2><a href="project-web.html" title="">Transavia-read</a></h2>
-                                                            <div class="portfolio-tags">
-                                                                <a href="#" title="">Project</a>
-                                                                <a href="#" title="">Webdesign</a>
-                                                            </div>
-                                                            <div class="line-zigzag"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="ui ux col-md-4 col-sm-6 col-xs-6">
-                                            <div class="portfolio-work hover5">
-                                                <img src="images/visual-interface-design.png" alt="" />
-                                                <div class="portfolio-detail-box">
-                                                    <div class="portfolio-hover">
-                                                        <div class="portfolio-infos">
-                                                            <a href="visual-interface-design.html" title=""><i class="fa fa-arrow-right"></i></a>
-                                                            <h2><a href="visual-interface-design.html" title="">Visual Interface Design</a></h2>
-                                                            <div class="portfolio-tags">
-                                                                <a href="#" title="">Visual</a>
-                                                                <a href="#" title="">Interaction</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="ux col-md-4 col-sm-6 col-xs-6">
-                                            <div class="portfolio-work hover5">
-                                                <img src="images/project-3.png" alt="" />
-                                                <div class="portfolio-detail-box">
-                                                    <div class="portfolio-hover">
-                                                        <div class="portfolio-infos">
-                                                            <a href="#" title=""><i class="fa fa-arrow-right"></i></a>
-                                                            <h2><a href="project-3.html" title="">Sense of light</a></h2>
-                                                            <div class="portfolio-tags">
-                                                                <a href="#" title="">Project 3</a>
-                                                                <a href="#" title="">Product Design</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="ux col-md-4 col-sm-6 col-xs-6">
-                                            <div class="portfolio-work hover5">
-                                                <img src="images/maatschappij-en-interactie.png" alt="" />
-                                                <div class="portfolio-detail-box">
-                                                    <div class="portfolio-hover">
-                                                        <div class="portfolio-infos">
-                                                            <a href="maatschappij-en-interactie.html" title=""><i class="fa fa-arrow-right"></i></a>
-                                                            <h2><a href="maatschappij-en-interactie.html" title="">Case beïnvloeding Alibaba</a></h2>
-                                                            <div class="portfolio-tags">
-                                                                <a href="#" title="">Maatschappij en Interactie</a>
-                                                                <a href="#" title="">Interaction Design</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="ui ux col-md-4 col-sm-6 col-xs-6">
-                                            <div class="portfolio-work hover5">
-                                                <img src="images/project-4.png" alt="" />
-                                                <div class="portfolio-detail-box">
-                                                    <div class="portfolio-hover">
-                                                        <div class="portfolio-infos">
-                                                            <a href="project-4.html" title=""><i class="fa fa-arrow-right"></i></a>
-                                                            <h2><a href="project-4.html" title="">Young Art festival</a></h2>
-                                                            <div class="portfolio-tags">
-                                                                <a href="#" title="">Product Design</a>
-                                                                <a href="#" title="">Interaction Design</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="fe col-md-4 col-sm-6 col-xs-6">
-                                            <div class="portfolio-work hover5">
-                                                <img src="images/javascript.png" alt="" />
-                                                <div class="portfolio-detail-box">
-                                                    <div class="portfolio-hover">
-                                                        <div class="portfolio-infos">
-                                                            <a href="programmeren.html" title=""><i class="fa fa-arrow-right"></i></a>
-                                                            <h2><a href="programmeren.html" title="">Inleiding programmeren</a></h2>
-                                                            <div class="portfolio-tags">
-                                                                <a href="#" title="">Front-end</a>
-                                                                <a href="#" title="">Desining</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="ui ux col-md-4 col-sm-6 col-xs-6">
-                                            <div class="portfolio-work hover5">
-                                                <img src="images/project-2.png" alt="" />
-                                                <div class="portfolio-detail-box">
-                                                    <div class="portfolio-hover">
-                                                        <div class="portfolio-infos">
-                                                            <a href="project-2.html" title=""><i class="fa fa-arrow-right"></i></a>
-                                                            <h2><a href="project-2.html" title="">Dieetplanner</a></h2>
-                                                            <div class="portfolio-tags">
-                                                                <a href="#" title="">Project 2</a>
-                                                                <a href="#" title="">Visual Design</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-sm-6 col-xs-6">
-                                            <div class="portfolio-work hover5">
-                                                <img src="images/ontwergeschiedenis.png" alt="" />
-                                                <div class="portfolio-detail-box">
-                                                    <div class="portfolio-hover">
-                                                        <div class="portfolio-infos">
-                                                            <a href="ontwerpgeschiedenis.html" title=""><i class="fa fa-arrow-right"></i></a>
-                                                            <h2><a href="ontwerpgeschiedenis.html" title="">Ontwerpgeschiedenis</a></h2>
-                                                            <div class="portfolio-tags">
-                                                                <a href="#" title="">Illustration</a>
-                                                                <a href="#" title="">Design</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="ux col-md-4 col-sm-6 col-xs-6">
-                                            <div class="portfolio-work hover5">
-                                                <img src="images/hci.png" alt="" />
-                                                <div class="portfolio-detail-box">
-                                                    <div class="portfolio-hover">
-                                                        <div class="portfolio-infos">
-                                                            <a href="human-interaction-design.html" title=""><i class="fa fa-arrow-right"></i></a>
-                                                            <h2><a href="human-interaction-design.html" title="">Papabubble</a></h2>
-                                                            <div class="portfolio-tags">
-                                                                <a href="#" title="">Human Interaction Design</a>
-                                                                <a href="#" title="">User Experience Design</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="ux col-md-4 col-sm-6 col-xs-6">
-                                            <div class="portfolio-work hover5">
-                                                <img src="images/ucd.png" alt="" />
-                                                <div class="portfolio-detail-box">
-                                                    <div class="portfolio-hover">
-                                                        <div class="portfolio-infos">
-                                                            <a href="user-centered-design.html" title=""><i class="fa fa-arrow-right"></i></a>
-                                                            <h2><a href="user-centered-design.html" title="">Koffie en thee automaten</a></h2>
-                                                            <div class="portfolio-tags">
-                                                                <a href="#" title="">User Experience Design</a>
-                                                                <a href="#" title="">User Interface Design</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="ui col-md-4 col-sm-6 col-xs-6">
-                                            <div class="portfolio-work hover5">
-                                                <img src="images/vormgeving.png" alt="" />
-                                                <div class="portfolio-detail-box">
-                                                    <div class="portfolio-hover">
-                                                        <div class="portfolio-infos">
-                                                            <a href="vormgeving.html" title=""><i class="fa fa-arrow-right"></i></a>
-                                                            <h2><a href="vormgeving.html" title="">Foodtruck "pick your own"</a></h2>
-                                                            <div class="portfolio-tags">
-                                                                <a href="#" title="">Visual Design</a>
-                                                                <a href="#" title="">Interaction Design</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!--Header-->
+    <header id="fullscreen">
+        <div class="logo" id="full"><a href="index.html">BR</a></div>
+        <div class="menu-index" id="button">
+            <i class="fa fa-bars"></i>
+        </div>
+    </header>
+    <div class="clear"></div>
 
-        <footer>
-            <div class="block no-padding">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <ul class="footer-social">
-                                <li><a href="https://www.facebook.com/britt.rademaker" title="">Facebook</a></li>
-                                <li><a href="https://www.instagram.com/brittrademaker/" title="">Instagram</a></li>
-                                <li><a href="https://www.linkedin.com/in/britt-rademaker" title="">Linkedin</a></li>
-                            </ul>
-                        </div>
+    <!--Content-->
+
+    <div class="content" id="ajax-content">
+
+
+        <div class="text-intro" id="site-type">
+
+            <h1>Mijn projecten</h1>
+            <h1 class="typewrite"><span>2016/2018</span></h1>
+            <p></p>
+
+        </div>
+
+
+        <!--Portfolio grid-->
+
+        <ul class="portfolio-grid" id="portfolio-sidebar">
+            <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+                <img src="images/text-in-context.png">
+                <a href="text-in-context.html">
+                    <div class="grid-hover">
+                        <h1>Café Camille</h1>
+                        <p>Text in Context</p>
                     </div>
-                </div>
-            </div>
-        </footer>
+                </a>
+            </li>
+
+            <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+                <img src="images/project-web.png">
+                <a href="project-web.html">
+                    <div class="grid-hover">
+                        <h1>Transavia-read</h1>
+                        <p>Project webdesign</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+                <img src="images/visual-interface-design.png">
+                <a href="visual-interface-design.html">
+                    <div class="grid-hover">
+                        <h1>Boek een boek</h1>
+                        <p>Visual Design</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+                <img src="images/project-3.png">
+                <a href="project-3.html">
+                    <div class="grid-hover">
+                        <h1>Sense of light</h1>
+                        <p>Project</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+                <img src="images/maatschappij-en-interactie.png">
+                <a href="maatschappij-en-interactie.html">
+                    <div class="grid-hover">
+                        <h1>Case beïnvloeding Alibaba</h1>
+                        <p>Interaction Design</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+                <img src="images/project-4.png">
+                <a href="project-4.html">
+                    <div class="grid-hover">
+                        <h1>Young Art festival</h1>
+                        <p>Product Design</p>
+                    </div>
+                </a>
+            </li>
+
+             <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+                <img src="images/javascript.png">
+                <a href="programmeren.html">
+                    <div class="grid-hover">
+                        <h1>Spacequizz</h1>
+                        <p>Javascript</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+                <img src="images/plugandplay.png">
+                <a href="plug-and-play.html">
+                    <div class="grid-hover">
+                        <h1>Postzegel verzamelaars</h1>
+                        <p>CMS</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+                <img src="images/project-2.png">
+                <a href="project-2.html">
+                    <div class="grid-hover">
+                        <h1>Dieetplanner</h1>
+                        <p>Interaction Design</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+                <img src="images/ontwergeschiedenis.png">
+                <a href="ontwerpgeschiedenis.html">
+                    <div class="grid-hover">
+                        <h1>Ontwerpgeschiedenis</h1>
+                        <p>Illustration</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+                <img src="images/hci.png">
+                <a href="human-interaction-design.html">
+                    <div class="grid-hover">
+                        <h1>Papabubble</h1>
+                        <p>User Experience Design</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+                <img src="images/ucd.png">
+                <a href="user-centered-design.html">
+                    <div class="grid-hover">
+                        <h1>Koffie en theeautomaten</h1>
+                        <p>User Centered Design</p>
+                    </div>
+                </a>
+            </li>
+
+            <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+                <img src="images/vormgeving.png">
+                <a href="vormgeving.html">
+                    <div class="grid-hover">
+                        <h1>Foodtruck "pick your own"</h1>
+                        <p>Visual Design</p>
+                    </div>
+                </a>
+            </li>
+
+
+        </ul>
 
     </div>
-    <script src="js/jquery.js" type="text/javascript"></script>
-    <script src="js/modernizr.js" type="text/javascript"></script>
+
+
+    <!--Home Sidebar-->
+
+    <div id="ajax-sidebar">
+
+        <div class="home-sidebar" style="background-image:url('images/sidebar-01.png'); position:fixed;" id="hero">
+
+            <div class="parallax-option" data-jkit="[parallax:strength=0.8;axis=both]">
+
+                <div class="parallax parallax1"><img src="images/sidebar-03.png"></div>
+
+            </div>
+
+            <div class="parallax-option" data-jkit="[parallax:strength=0.3;axis=both]">
+
+                <div class="parallax parallax1"><img src="images/sidebar-02.png"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!--Footer-->
+
+    <footer id="footer-box">
+
+        <div class="footer-margin">
+
+            <div class="copyright" id="footer-left">© Copyright 2018. Britt Rademaker</div>
+
+        </div>
+
+
+    </footer>
+
+
+    <!--Scripts-->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/modernizr.custom.42534.js" type="text/javascript"></script>
+    <script src="js/jquery.waitforimages.js" type="text/javascript"></script>
+    <script src="js/typed.js" type="text/javascript"></script>
+    <script src="js/masonry.pkgd.min.js" type="text/javascript"></script>
+    <script src="js/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+    <script src="js/jquery.jkit.1.2.16.min.js"></script>
+
     <script src="js/script.js" type="text/javascript"></script>
-    <script src="js/isotop.js" type="text/javascript"></script>
+
+    <script>
+        $('#button, #buttons').on('click', function() {
+            $(".opacity-nav").fadeToggle("slow", "linear");
+            // Animation complete.
+        });
+    </script>
+
 
 </body>
 

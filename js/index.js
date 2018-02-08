@@ -1,40 +1,11 @@
 /**
  * Velocity Effects
- *
- * First, A few Registered effects for velocity's ui kit.
- * Actual slider stuff below
  */
 
 var scaleDownAmnt = 0.7;
 var boxShadowAmnt = '40px';
 
-$.Velocity.RegisterEffect("translateUp", {
-  defaultDuration: 1,
-  calls: [
-    [{
-      translateY: '-100%'
-    }, 1]
-  ]
-});
-$.Velocity.RegisterEffect("translateDown", {
-  defaultDuration: 1,
-  calls: [
-    [{
-      translateY: '100%'
-    }, 1]
-  ]
-});
-$.Velocity.RegisterEffect("translateNone", {
-  defaultDuration: 1,
-  calls: [
-    [{
-      translateY: '0',
-      opacity: '1',
-      scale: '1',
- 
-    }, 1]
-  ]
-});
+
 //scale down
 $.Velocity.RegisterEffect("scaleDown", {
   defaultDuration: 1,
@@ -165,7 +136,6 @@ $.Velocity.RegisterEffect("scaleUp.moveDown", {
 });
 
 
-
 /**
  * Velo Slider
  * A Custom Slider using Velocity and Velocity UI effects
@@ -178,7 +148,7 @@ var VeloSlider = (function() {
    */
   var settings = {
     veloInit: $('.velo-slides').data('velo-slider'),
-    $veloSlide: $('.velo-slide'),
+    veloSlide: $('.velo-slide'),
     veloSlideBg: '.velo-slide__bg',
     navPrev:  $('.velo-slides-nav').find('a.js-velo-slides-prev'),
     navNext:  $('.velo-slides-nav').find('a.js-velo-slides-next'),
@@ -210,7 +180,7 @@ var VeloSlider = (function() {
     bind: function(){
  
       //  Add active to first slide to set it off
-      settings.$veloSlide.first().addClass('is-active');
+      settings.veloSlide.first().addClass('is-active');
 
       //  Init with a data attribute, 
       //  Binding the animation to scroll, arrows, keys
@@ -237,17 +207,6 @@ var VeloSlider = (function() {
           VeloSlider.prevSlide();
         }
       });
-      
-      // // Swipes
-      // $(window).swipe(function( direction, offset ) {
-      //   //if (offset < 100) { return; }
-      //   if (direction == "up") { 
-      //     VeloSlider.prevSlide(); 
-      //     console.log('swipe up');
-
-      //   }
-      //   if (direction == "down") { VeloSlider.nextSlide(); } 
-      // });
     
       //set navigation arrows visibility
       VeloSlider.checkNavigation();
@@ -264,7 +223,7 @@ var VeloSlider = (function() {
      */
     hoverAnimation: function(){
       settings.veloBtn.hover(function (){
-        $(this).closest(settings.$veloSlide).toggleClass('is-hovering');
+        $(this).closest(settings.veloSlide).toggleClass('is-hovering');
       });
     },
 
@@ -302,9 +261,9 @@ var VeloSlider = (function() {
      */
     initScrollJack: function() {
 
-      var visibleSlide = settings.$veloSlide.filter('.is-active'),
-          topSection = visibleSlide.prevAll(settings.$veloSlide),
-          bottomSection = visibleSlide.nextAll(settings.$veloSlide),
+      var visibleSlide = settings.veloSlide.filter('.is-active'),
+          topSection = visibleSlide.prevAll(settings.veloSlide),
+          bottomSection = visibleSlide.nextAll(settings.veloSlide),
           animationParams = VeloSlider.setAnimation(false),
           animationVisible = animationParams[0],
           animationTop = animationParams[1],
@@ -344,11 +303,11 @@ var VeloSlider = (function() {
       //go to previous section
       typeof e !== 'undefined' && e.preventDefault();
       
-      var visibleSlide = settings.$veloSlide.filter('.is-active'),
+      var visibleSlide = settings.veloSlide.filter('.is-active'),
           animationParams = VeloSlider.setAnimation(midStep, 'prev'),
           midStep = false;
       
-      visibleSlide = midStep ? visibleSlide.next(settings.$veloSlide) : visibleSlide;
+      visibleSlide = midStep ? visibleSlide.next(settings.veloSlide) : visibleSlide;
 
       console.log(midStep);
 
@@ -360,7 +319,7 @@ var VeloSlider = (function() {
           .children(settings.veloSlideBg)
           .velocity(animationParams[2], animationParams[3], animationParams[4])
           .end()
-          .prev(settings.$veloSlide)
+          .prev(settings.veloSlide)
           .addClass('is-active')
           .children(settings.veloSlideBg)
           .velocity(animationParams[0], animationParams[3], animationParams[4], function() {
@@ -380,7 +339,7 @@ var VeloSlider = (function() {
       //go to next section
       typeof e !== 'undefined' && e.preventDefault();
       
-      var visibleSlide = settings.$veloSlide.filter('.is-active'),
+      var visibleSlide = settings.veloSlide.filter('.is-active'),
           animationParams = VeloSlider.setAnimation(midStep, 'next'),
           midStep = false;
 
@@ -391,7 +350,7 @@ var VeloSlider = (function() {
           .children(settings.veloSlideBg)
           .velocity(animationParams[1], animationParams[3])
           .end()
-          .next(settings.$veloSlide)
+          .next(settings.veloSlide)
           .addClass('is-active')
           .children(settings.veloSlideBg)
           .velocity(animationParams[0], animationParams[3], function() {
@@ -417,8 +376,8 @@ var VeloSlider = (function() {
      */
     checkNavigation: function() {
       //update navigation arrows visibility
-      (settings.$veloSlide.filter('.is-active').is(':first-of-type')) ? settings.navPrev.addClass('inactive'): settings.navPrev.removeClass('inactive');
-      (settings.$veloSlide.filter('.is-active').is(':last-of-type')) ? settings.navNext.addClass('inactive'): settings.navNext.removeClass('inactive');
+      (settings.veloSlide.filter('.is-active').is(':first-of-type')) ? settings.navPrev.addClass('inactive'): settings.navPrev.removeClass('inactive');
+      (settings.veloSlide.filter('.is-active').is(':last-of-type')) ? settings.navNext.addClass('inactive'): settings.navNext.removeClass('inactive');
 
     },
   };
